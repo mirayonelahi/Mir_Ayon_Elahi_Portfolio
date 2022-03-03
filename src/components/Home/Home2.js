@@ -19,7 +19,7 @@ function Home2() {
               Hi! I am<span className="purple"> Mir Ayon Elahi </span>
             </h1>
             <p className="home-about-body">
-              Love solving business problems by coding. Professional experience working with e-commerce, inventory management
+              Love solving business problems by coding. Professional experience working with e-commerce, inventory management.
               <br />
               <br />I am fluent in languages like
               <i>
@@ -47,7 +47,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js and Next.js.</b>
               </i>
             </p>
           </Col>
