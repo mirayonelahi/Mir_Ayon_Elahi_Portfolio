@@ -4,11 +4,11 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 import tug from "../../Assets/Projects/tug.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
+import warehouse from "../../Assets/Projects/warehouse.png";
 import barber from "../../Assets/Projects/Barbershop.jpeg";
 import battle from "../../Assets/Projects/Battleship.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import inventory from "../../Assets/Projects/inventory.png";
+import food from "../../Assets/Projects/food.png";
 
 function Projects() {
   return (
@@ -35,6 +35,36 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={inventory}
+              isBlog={false}
+              title="Cloud-based liquidation inventory management and pricing application"
+              description="Cloud-based liquidation inventory management and pricing application system is a proprietary warehouse management system. This application was specifically tailored for the purpose of managing liquidation warehouses, inventories, handle shipments, deliveries, logistics, manage stocks and so on."
+              link=""
+            />
+          </Col> 
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={warehouse}
+              isBlog={false}
+              title="Cloud-based warehouse management system"
+              description="Cloud-based warehouse management system is a proprietary warehouse management system of Liquidations Plus. This application was specifically tailored for the purpose of managing liquidation warehouses, and handle shipments, deliveries, logistics, manage stocks and so on. "
+              link=""
+            />
+          </Col> 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={food}
+              isBlog={false}
+              title="Food Review"
+              description="Food review website built by me using Javascript , Jquery, Php , Laravel, Mysql. It's a review website where people can give review of different foods/restaurants and see others."
+              link=""
+            />
+          </Col> 
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={barber}
               isBlog={false}
               title="BarberShop App"
@@ -53,36 +83,6 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
-            />
-          </Col> */}
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col> 
-{/* 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-            />
-          </Col> */}
         </Row>
       </Container>
     </Container>

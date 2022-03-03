@@ -11,6 +11,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiFillLinkedin
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -59,7 +60,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/about"
@@ -67,7 +68,7 @@ function NavBar() {
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link
@@ -94,6 +95,16 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+              href="https://www.linkedin.com/in/mir-ayon-elahi/"
+              target="_blank"
+              rel="noreferrer"
+              >
+                <AiFillLinkedin style={{ marginBottom: "2px" }} /> Linkedin
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
                 href="https://mirayonelahi.hashnode.dev/"
                 target="_blank"
                 rel="noreferrer"
@@ -101,6 +112,7 @@ function NavBar() {
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
+            
 
             {/* <Nav.Item className="fork-btn">
               <Button
